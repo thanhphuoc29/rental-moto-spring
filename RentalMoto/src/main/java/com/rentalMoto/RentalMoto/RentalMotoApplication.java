@@ -1,0 +1,13 @@
+package com.rentalMoto.RentalMoto;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class RentalMotoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(RentalMotoApplication.class, args);
+	}
+
+}

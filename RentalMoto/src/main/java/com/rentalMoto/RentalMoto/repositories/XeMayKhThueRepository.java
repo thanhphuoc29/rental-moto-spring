@@ -1,0 +1,15 @@
+package com.rentalMoto.RentalMoto.repositories;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+
+import com.rentalMoto.RentalMoto.models.XeMayKhThue;
+
+@Repository
+public interface XeMayKhThueRepository extends JpaRepository<XeMayKhThue, Integer>{
+	@Query(value = "SELECT * FROM xe_may_kh_thue WHERE xe_may_id = ?1", nativeQuery = true)
+	List<XeMayKhThue> findByIdXe(int idXe);
+}
